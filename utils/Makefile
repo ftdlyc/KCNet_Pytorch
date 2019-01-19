@@ -37,7 +37,7 @@ $(OBJDIR)%.o: %.cc
 	$(CXX) $(INCLUDES) $(CXXFLAGS) -c $< -o $@
 
 $(OBJDIR)%.o: %.cu
-	$(NVCC) $(ARCH) $(INCLUDES) --compiler-options "-fPIC" -c $< -o $@
+	$(NVCC) $(ARCH) $(INCLUDES) --compiler-options "$(NVCCFLAGS)" -c $< -o $@
 
 obj:
 	mkdir -p obj
