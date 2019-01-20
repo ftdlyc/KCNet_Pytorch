@@ -1,6 +1,8 @@
 #ifndef CUDA_UTILS_H
 #define CUDA_UTILS_H
 
+#include <stdio.h>
+
 #include <algorithm>
 #include <complex>
 #define TOTAL_THREADS 512
